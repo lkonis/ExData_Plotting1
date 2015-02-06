@@ -7,7 +7,7 @@ data<-read.table("household_power_consumption.txt", skip = 66637, nrow=24*60*2, 
 N = length(data$Date)
 days = c("Thu", "Fri", "Sat")
 
-# make histogram plot
+# make plot
 png(filename = "plot3.png",    width = 480, height = 480)
 plot(data$Sub_metering_1,  xaxt = "n", type="l", ylab = "Energy sub metering", xlab = "")
 points(data$Sub_metering_2,  xaxt = "n", type="l", ylab = "Energy sub metering", xlab = "", col="red")
