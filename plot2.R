@@ -7,6 +7,6 @@ days = c("Thu", "Fri", "Sat")
 N = length(data$Date)
 # make histogram plot
 png(filename = "plot2.png",    width = 480, height = 480)
-plot(data$Global_active_power,  xaxt = "n", type="b", lty=1, pch=".", ylab = "Global Active Power (kilowatts)", xlab = "")
+plot(data$Global_active_power,  xaxt = "n", type="l", ylab = "Global Active Power (kilowatts)", xlab = "")
 axis(1, at=c(1,round(N/2),N-10), labels=days)
 dev.off()
